@@ -1,4 +1,5 @@
 def call(Map config = [:]){
+   install(
     packageManager:config.packageManager
-    bat "echo package Manager:${packageManger}"
+   )
 }
