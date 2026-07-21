@@ -1,5 +1,4 @@
 def call(Map config = [:]){
-   install(
-    packageManager:config.packageManager
-   )
+    bat "echo package Manager:${config.packageManager}"
+    bat "echo ${config.packageManager} install express" 
 }
