@@ -1,6 +1,8 @@
 def call(Map config = [:]){
-    node(
-        nodeversion : config.nodeversion,
-        npmversion : config.npmversion
-    )
+    bat '''
+    echo Node.js Version Checked
+    node -v
+    echo NPM version checked
+    npm -v
+    '''
 }
