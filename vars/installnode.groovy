@@ -1,5 +1,6 @@
 def call(Map config = [:]){
     node(
-        packagename : config.packagename
+        nodeversion : config.nodeversion,
+        npmversion : config.npmversion
     )
 }
