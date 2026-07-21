@@ -1,6 +1,6 @@
 def call(Map config = [:]){
-    bat '''
+    bat """
     echo Running the forntend build command
     ${config.buildcommand}
-    '''
+    """
 }
